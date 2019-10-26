@@ -14,3 +14,6 @@ class ConvertCsvfileToJsonfile
     File.open("./json/#{jsonfilename}", "w") { |f| f.write rows.to_json }
   end
 end
+
+# 実行
+ConvertCsvfileToJsonfile.new
